@@ -1,21 +1,14 @@
 import styled from 'styled-components'
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import Button from '../../components/shared/Button'
 
 
 
-
 export default function FarRight() {
-
-  const [clicked, setClicked] = useState(false)
   return (
     <>
       <Login>LOGIN</Login>
-      <Button onMouseDown={() => {
-        setClicked(true)
-      }} variant='header' clicked={clicked} onMouseUp={() => {
-        setClicked(false)
-      }} />
+      <Button variant='header' />
     </>
   )
 }
